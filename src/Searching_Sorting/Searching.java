@@ -1,3 +1,5 @@
+package Searching_Sorting;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -46,7 +48,7 @@ public class Searching {
 
     // Binary Search
     private void binarySearch(int x[])throws IOException {
-        System.out.println("\n-----Searching via Binary Search : ------");
+        System.out.println("\n-----Searching_Sorting.Searching via Binary Search : ------");
         System.out.println("\nOriginal Array : ");
 
         Arrays.sort(x);
@@ -86,7 +88,7 @@ public class Searching {
 
     private void jumpSearch(int x[])throws IOException{
 
-        System.out.println("\n-----Searching via Jump Search : ------");
+        System.out.println("\n-----Searching_Sorting.Searching via Jump Search : ------");
         System.out.println("\nOriginal Array : ");
 
         Arrays.sort(x);

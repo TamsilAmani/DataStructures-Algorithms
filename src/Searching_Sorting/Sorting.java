@@ -1,3 +1,5 @@
+package Searching_Sorting;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Random;
@@ -58,7 +60,7 @@ class Sorting {
     // Selection Sort
     private void selectionSort(int x[]){
 
-        System.out.println("\n-----Sorting via Selection Sort : ------");
+        System.out.println("\n-----Searching_Sorting.Sorting via Selection Sort : ------");
         System.out.println("\nOriginal Array : ");
 
         for(int y:x)
@@ -94,7 +96,7 @@ class Sorting {
 
     // Bubble Sort
     private void bubbleSort(int x[]){
-        System.out.println("\n\n-----Sorting via Bubble Sort : ------");
+        System.out.println("\n\n-----Searching_Sorting.Sorting via Bubble Sort : ------");
         System.out.println("\nOriginal Array : ");
 
         for(int y:x)
@@ -123,7 +125,7 @@ class Sorting {
     // Insertion Sort
     private void insertionSort(int x[]){
 
-        System.out.println("\n\n-----Sorting via Insertion Sort : ------");
+        System.out.println("\n\n-----Searching_Sorting.Sorting via Insertion Sort : ------");
         System.out.println("\nOriginal Array : ");
 
         for(int y:x)
@@ -153,7 +155,7 @@ class Sorting {
 
     // Quick Sort
     private void quickSort(int x[]){
-        System.out.println("\n\n-----Sorting via Quick Sort : ------");
+        System.out.println("\n\n-----Searching_Sorting.Sorting via Quick Sort : ------");
         System.out.println("\nOriginal Array : ");
 
         for(int y:x)
@@ -225,7 +227,7 @@ class Sorting {
 
     // Merge Sort
     private void mergeSort(int x[]){
-        System.out.println("\n\n-----Sorting via Merge Sort : ------");
+        System.out.println("\n\n-----Searching_Sorting.Sorting via Merge Sort : ------");
         System.out.println("\nOriginal Array : ");
 
         for(int y:x)
@@ -302,7 +304,7 @@ class Sorting {
 
     /* Counting Sort
     private void countingSOrt(int x[]){
-        System.out.println("\n\n-----Sorting via Counting Sort : ------");
+        System.out.println("\n\n-----Searching_Sorting.Sorting via Counting Sort : ------");
         System.out.println("\nOriginal Array : ");
 
         for(int y:x)
