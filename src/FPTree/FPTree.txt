@@ -1,7 +1,0 @@
-package FPTree;
-
-public class FPTree {
-    public static void main(String args[]) throws IOException{
-
-    }
-}

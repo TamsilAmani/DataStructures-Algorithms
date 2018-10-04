@@ -1,0 +1,9 @@
+package src.Graphs;
+
+public class PetersonProblem {
+    public static void main(String args[]){
+        int mat[][] = {
+                {0,1,0,0,1,0,0,0,0}
+        }
+    }
+}
