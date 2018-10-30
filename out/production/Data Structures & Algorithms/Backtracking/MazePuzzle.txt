@@ -1,0 +1,60 @@
+package src.Backtracking;
+
+public class MazePuzzle {
+    static final int M = 5, N = 6;
+
+    public static void main(String args[]){
+        int top = {1, -1, -1, 2, 1, -1};
+        int bottom[] = {2, -1, -1, 2, -1, 3};
+        int left[] = {2, 3, -1, -1, -1};
+        int right[] = {-1, -1, -1, 1, -1};
+
+        char board[][] ={{'L','R','L','R','T'},
+                {'L','R','L','R','B','B'},
+                {'T','T','T','T','L','R'},
+                {'B','B','B','B','T','T'},
+                {'L','R','L','R','B','B'}};
+
+
+        solveMazePuzzle(top, bottom, left, right,board);
+    }
+
+    static void solveMazePuzzle(int top[], int bottom[], int left[], int right[], char board[][]){
+        char matrix[][] = new char[M][N];
+        for(int i = 0; i<M;i++)
+            for(int j=0; j<N;j++)
+                matrix[i][j] = 'X';
+
+
+        if(backtrack(0,0,top,bottom,left,right,board))
+            printMatrix(matrix);
+        else
+            System.out.println("Not Possible");
+    }
+
+    static boolean backtrack(int row, int col, int top[], int bottom[], int left[], int right[], char board[][]){
+
+        if(row==M-1 && col==N-1){
+            return validateMatrix(top,bottom,left,right,board);
+        }
+
+        if(col== N-1){
+            row=row+1;
+            col=0;
+        }
+
+        if(board[row][col]=='R' || board[row][col]=='B'){
+           if(backtrack(row,col+1, top,bottom,left,right,board))
+               return true;
+        }
+
+        if(board[row][col]=='T' || board[row][col]=='L'){
+
+            if(isSafe(top, bottom, left, right, board, '+',))
+
+
+        }
+
+
+    }
+}
